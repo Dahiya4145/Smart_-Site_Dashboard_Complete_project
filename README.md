@@ -41,7 +41,7 @@ Follow the steps below to set up and run the project locally.
 ### 📁 Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/Dahiya4145/Smart_Site_Dashboard_Complete_project.git
+git clone https://github.com/Dahiya4145/Smart_-Site_Dashboard_Complete_project.git
 cd smart-site-dashboard
 ````
 
