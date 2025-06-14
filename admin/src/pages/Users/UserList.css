@@ -1,0 +1,56 @@
+/* Default = Light Theme */
+.user-page {
+  padding: 20px;
+  background: linear-gradient(135deg, #dbeafe, #fef3c7);
+  color: #111827;
+}
+
+.user-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #111827;
+}
+
+/* Buttons - Light Mode */
+.btn {
+  background-color: #10b981; /* green-500 */
+  color: white;
+  padding: 8px 16px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-export {
+  background-color: #6366f1; /* indigo-500 */
+}
+
+/* =============== DARK THEME OVERRIDES =============== */
+
+.dark-theme.user-page {
+  background: linear-gradient(135deg, #1e293b, #111827); /* dark gradient */
+  color: #f1f5f9;
+}
+
+.dark-theme .user-header h2 {
+  color: #f1f5f9;
+}
+
+.dark-theme .btn {
+  background-color: #047857; /* darker green */
+  color: #e0f2f1;
+}
+
+.dark-theme .btn-export {
+  background-color: #4f46e5; /* darker indigo */
+}
+
+/* Add more dark overrides as needed */

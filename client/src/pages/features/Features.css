@@ -1,0 +1,116 @@
+/* Features.css */
+
+.features-container {
+  background-color: #f9fafb;
+  padding: 3rem 1rem;
+}
+
+.features-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 3rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Responsive font size */
+@media (max-width: 768px) {
+  .features-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .features-title {
+    font-size: 1.75rem;
+  }
+}
+
+.feature-section {
+  background-color: #ffffff;
+  border-radius: 1.5rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add spacing between cards in grid layout if needed */
+.feature-section:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.08);
+}
+
+.feature-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for icon */
+.feature-section:hover .feature-icon {
+  transform: scale(1.15) rotate(4deg);
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.feature-description {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* --- Responsive adjustments for smaller devices --- */
+
+@media (max-width: 768px) {
+  .feature-section {
+    padding: 1.5rem;
+  }
+
+  .feature-icon {
+    font-size: 2rem;
+  }
+
+  .feature-title {
+    font-size: 1.1rem;
+  }
+
+  .feature-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .feature-section {
+    padding: 1.2rem;
+  }
+
+  .feature-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .feature-title {
+    font-size: 1rem;
+  }
+
+  .feature-description {
+    font-size: 0.85rem;
+  }
+
+  .feature-icon {
+    font-size: 1.8rem;
+  }
+}

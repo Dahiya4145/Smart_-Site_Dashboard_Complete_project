@@ -1,0 +1,245 @@
+.site-details-container {
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  max-width: 1000px;
+  margin: 1rem auto;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.location, .status {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  text-align: center;
+}
+
+/* Updated for responsiveness */
+.location-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.open-map-button {
+  padding: 6px 12px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+.open-map-button:hover {
+  background-color: #0056b3;
+}
+
+/* Section Blocks */
+.section {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background-color: #fafafa;
+}
+
+/* Weather Info */
+.weather-info {
+  text-align: center;
+}
+
+.weather-info p,
+.weather-info img {
+  display: inline-block;
+  margin: 0.5rem 0.75rem;
+  vertical-align: middle;
+}
+
+.weather-icon {
+  height: 40px;
+  vertical-align: middle;
+}
+
+/* Materials Section */
+.materials-list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  margin-top: 1rem;
+}
+
+.material-card {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  transition: box-shadow 0.3s ease;
+}
+
+.material-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.material-card p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+  word-break: break-word;
+}
+
+/* Tasks Section */
+.tasks-list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  margin-top: 1rem;
+}
+
+.task-card {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.task-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.task-card p {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+  word-break: break-word;
+}
+/* Buttons: Add New & Edit */
+.add-button,
+.edit-button ,.delete-button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: white;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-right: 10px;
+}
+
+
+/* Add New Button - Green */
+.add-button {
+  background-color: #28a745;
+}
+
+.add-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Edit Button - Blue */
+.edit-button {
+  background-color: #007bff;
+}
+
+.edit-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+ /* delet button - red*/
+
+.delete-button {
+  background-color: #ea3f3f;
+}
+
+.delete-button:hover {
+  background-color: #b00e0e; /* Darker blue on hover */
+}
+
+/* Responsive Breakpoints */
+
+/* Tablets and small laptops */
+@media (min-width: 600px) {
+  .materials-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tasks-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Desktops and larger screens */
+@media (min-width: 900px) {
+  .materials-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .tasks-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+}
+
+/* Mobile Optimizations */
+@media (max-width: 480px) {
+  .site-details-container {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .open-map-button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .material-card p,
+  .task-card p,
+  .location,
+  .status {
+    font-size: 0.9rem;
+  }
+
+  .weather-info p {
+    font-size: 0.9rem;
+  }
+
+  .weather-icon {
+    height: 32px;
+  }
+}
+
+
+.labor-card {
+  background-color: #f3f3f3;
+  padding: 16px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+.labor-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

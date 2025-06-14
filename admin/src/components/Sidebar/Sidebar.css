@@ -1,0 +1,175 @@
+/* Base Sidebar */
+.sidebar {
+  width: 250px;
+  min-height: 100vh;
+  background-color: #1f2937; /* dark bg */
+  color: white;
+  padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  position: relative;
+  z-index: 20;
+}
+
+/* Light theme styles */
+.sidebar.light {
+  background-color: #f9fafb; /* light bg */
+  color: #1f2937;
+}
+
+/* Title */
+.sidebar-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Nav container */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Sidebar links */
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: background 0.3s ease, color 0.3s ease;
+  font-size: 16px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Hover effect for links */
+.sidebar-link:hover {
+  background: linear-gradient(135deg, #0f766e, #1e40af);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Active link style */
+.sidebar-link.active {
+  background-color: #4b5563;
+  color: #facc15;
+}
+
+.sidebar.light .sidebar-link.active {
+  background-color: #e0e7ff;
+  color: #1d4ed8;
+}
+
+/* Icon size */
+.icon {
+  font-size: 18px;
+}
+
+/* Theme toggle button styled like links */
+.theme-toggle {
+  background: none;
+  border: none;
+  color: inherit;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Hover for theme toggle */
+.theme-toggle:hover {
+  background: linear-gradient(135deg, #0f766e, #1e40af);
+  backdrop-filter: blur(6px);
+}
+
+.sidebar.light .theme-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Hamburger Button (mobile) */
+.btn-menu {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Responsive: Tablet and Below */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 80px;
+    padding: 20px 10px;
+  }
+
+  .sidebar-title {
+    display: none;
+  }
+
+  .sidebar-nav {
+    align-items: center;
+  }
+
+  .sidebar-link {
+    justify-content: center;
+    font-size: 0;
+    padding: 10px;
+  }
+
+  .sidebar-link .icon {
+    font-size: 20px;
+  }
+
+  .theme-toggle {
+    justify-content: center;
+    font-size: 0;
+    padding: 10px;
+  }
+
+  .theme-toggle svg {
+    font-size: 20px;
+  }
+}
+
+/* Responsive: Mobile (menu toggler) */
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .sidebar.mobile {
+    transform: translateX(0);
+  }
+
+  .btn-menu {
+    position: absolute;
+    top: 15px;
+    right: -45px;
+    background-color: #1f2937;
+    border-radius: 6px;
+    padding: 8px 12px;
+    z-index: 30;
+  }
+
+  .sidebar.light .btn-menu {
+    background-color: #f9fafb;
+    color: #1f2937;
+  }
+}

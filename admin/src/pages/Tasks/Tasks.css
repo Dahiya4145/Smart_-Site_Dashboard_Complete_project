@@ -1,0 +1,79 @@
+/* Default = Light Theme */
+.tasks-page {
+  padding: 20px;
+  background: linear-gradient(135deg, #dbeafe, #fef3c7);
+  color: #111827;
+}
+
+.tasks-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.tasks-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Buttons - Light Mode */
+.btn {
+  background-color: #10b981; /* green-500 */
+  color: white;
+  padding: 8px 16px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-export {
+  background-color: #6366f1; /* indigo-500 */
+}
+
+/* =============== DARK THEME OVERRIDES =============== */
+
+.dark-theme.tasks-page {
+  background: linear-gradient(135deg, #1e293b, #111827); /* dark gradient */
+  color: #f1f5f9;
+}
+
+.dark-theme .tasks-header h2 {
+  color: #f1f5f9;
+}
+
+.dark-theme .btn {
+  background-color: #047857; /* darker green */
+  color: #e0f2f1;
+}
+
+.dark-theme .btn-export {
+  background-color: #4f46e5;
+}
+
+/* Add more dark theme overrides below if needed, e.g. for btn-excel */
+
+.dark-theme .btn-excel {
+  background-color: #2563eb; /* blue-600 for Excel button in dark mode */
+  color: #e0f2f1;
+}
+.no-tasks-container {
+  text-align: center;
+  margin-top: 60px;
+  color: var(--text-muted, #666);
+}
+
+.no-tasks-icon {
+  margin-bottom: 20px;
+  stroke: var(--primary-color, #4a90e2);
+}
+
+.no-tasks-container h3 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.no-tasks-container p {
+  font-size: 1.1rem;
+}

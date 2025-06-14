@@ -1,0 +1,88 @@
+.dashboard {
+  padding: 20px;
+  background: linear-gradient(135deg, #dbeafe, #fef3c7);
+}
+
+.dashboard-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1f2937; /* Tailwind gray-800 */
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  flex: 1 1 220px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #374151; /* gray-700 */
+  text-transform: capitalize;
+}
+
+.card p {
+  font-size: 26px;
+  font-weight: bold;
+  color: #2563eb; /* Tailwind blue-600 */
+}
+
+/* Responsive for tablets and mobile */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+/* ====== DARK THEME OVERRIDES ====== */
+
+.dark-theme.dashboard {
+  background: linear-gradient(135deg, #1e293b, #111827); /* dark gradient */
+}
+
+.dark-theme .dashboard-title {
+  color: #f1f5f9; /* gray-100 */
+}
+
+.dark-theme .card {
+  background: rgba(31, 41, 55, 0.7); /* Tailwind gray-800 with opacity */
+  border: 1px solid rgba(243, 244, 246, 0.1); /* Tailwind gray-100 low opacity */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.dark-theme .card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+}
+
+.dark-theme .card h3 {
+  color: #e0e7ff; /* Tailwind indigo-100 */
+}
+
+.dark-theme .card p {
+  color: #818cf8; /* Tailwind indigo-400 */
+}

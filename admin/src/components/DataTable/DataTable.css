@@ -1,0 +1,116 @@
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #e5e7eb;
+  padding: 12px;
+  text-align: left;
+}
+
+.data-table th {
+  background-color: #f9fafb;
+  font-weight: 600;
+}
+
+.data-table button {
+  margin-right: 8px;
+  padding: 6px 12px;
+  border: none;
+  background-color: #3b82f6;
+  color: white;.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.95rem;
+  overflow-x: auto;
+  display: block; /* Make it scrollable on smaller screens */
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #e5e7eb;
+  padding: 14px 16px;
+  text-align: left;
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.data-table th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+  color: #374151;
+}
+
+.data-table tbody tr:hover {
+  background-color: #f1f5f9;
+  transition: background-color 0.3s ease;
+}
+
+.data-table button {
+  margin-right: 8px;
+  padding: 6px 12px;
+  border: none;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background-color 0.2s ease;
+}
+
+.data-table button:hover {
+  background-color: #2563eb;
+}
+
+.data-table button:last-child {
+  background-color: #ef4444;
+}
+
+.data-table button:last-child:hover {
+  background-color: #dc2626;
+}
+
+/* Responsive enhancements */
+@media (max-width: 768px) {
+  .data-table {
+    font-size: 0.875rem;
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 10px 12px;
+  }
+
+  .data-table button {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .data-table {
+    font-size: 0.8rem;
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 8px 10px;
+  }
+
+  .data-table button {
+    padding: 4px 8px;
+    margin-right: 4px;
+  }
+}
+
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.data-table button:last-child {
+  background-color: #ef4444;
+}

@@ -1,0 +1,376 @@
+/* Full-page container */
+.register-page {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background video */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Overlay for contrast */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Slightly lighter overlay */
+  z-index: 1;
+}
+
+/* Register Form Styling - Glassmorphism */
+.register-form {
+  position: relative;
+  z-index: 2;
+  max-width: 400px;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.2); /* Very transparent white */
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.8s ease;
+  backdrop-filter: blur(15px); /* Stronger blur for the glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+}
+
+.register-form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff; /* White text for better contrast on transparent background */
+  font-size: 2.2em;
+  font-weight: 500;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
+
+.register-form .form-group {
+  margin-bottom: 20px;
+}
+
+.register-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #eee; /* Light text for labels */
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.register-form input {
+  width: calc(100% - 24px);
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Light border */
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent input background */
+  color: #fff; /* White input text */
+  transition: border-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.register-form input::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Lighter placeholder text */
+}
+
+.register-page input:focus + label,
+  .register-form input:not(:placeholder-shown) + label {
+    top: 2px;
+    font-size: 0.75em;
+  }
+
+.register-form input:focus {
+  border-color: #a7f3d0; /* Light green focus color */
+  background-color: rgba(255, 255, 255, 0.2);
+  outline: none;
+  box-shadow: 0 2px 5px rgba(167, 243, 208, 0.2);
+}
+
+.register-form button {
+  width: 100%;
+  padding: 14px;
+  background-color: rgba(102, 197, 130, 0.8); /* Slightly transparent green */
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.register-form button:hover {
+  background-color: rgba(85, 163, 110, 0.9);
+  transform: translateY(-2px);
+}
+
+.auth-switch-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #ddd;
+}
+
+.auth-link {
+  color: #a7f3d0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .register-form {
+    margin: 30px 20px;
+    padding: 30px;
+    border-radius: 12px;
+  }
+
+  .register-form h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+
+  .register-form .form-group {
+    margin-bottom: 15px;
+  }
+
+  .register-form label {
+    font-size: 0.95em;
+  }
+
+  .register-form input,
+  .register-form button {/* Full-page container */
+.register-page {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Background video */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Overlay for contrast */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Slightly lighter overlay */
+  z-index: 1;
+}
+
+/* Register Form Styling - Glassmorphism with Floating Labels */
+.register-form {
+  position: relative;
+  z-index: 2;
+  max-width: 400px;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.2); /* Very transparent white */
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.8s ease;
+  backdrop-filter: blur(15px); /* Stronger blur for the glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+}
+
+.register-form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff; /* White text for better contrast on transparent background */
+  font-size: 2.2em;
+  font-weight: 500;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
+
+.form-group {
+  position: relative; /* For absolute positioning of the label */
+  margin-bottom: 25px; /* Increased bottom margin for spacing */
+}
+
+.register-form input {
+  width: calc(100% - 24px);
+  padding: 16px 12px 8px; /* Adjusted padding for floating label effect */
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Light border */
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent input background */
+  color: #fff; /* White input text */
+  transition: border-color 0.3s ease;
+}
+
+.register-form input::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Lighter placeholder text */
+}
+
+.register-form input:focus {
+  border-color: #a7f3d0; /* Light green focus color */
+  background-color: rgba(255, 255, 255, 0.2);
+  outline: none;
+  box-shadow: 0 2px 5px rgba(167, 243, 208, 0.2);
+}
+
+.register-form label {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1em;
+  font-weight: normal;
+  pointer-events: none; /* Allows clicks to pass through to the input */
+  transition: all 0.2s ease-in-out;
+}
+
+/* Style the label when the input is focused or has content */
+.register-form input:focus + label,
+.register-form input:not(:placeholder-shown) + label {
+  top: 4px;
+  font-size: 0.8em;
+  color: #a7f3d0;
+}
+
+.register-form button {
+  width: 100%;
+  padding: 14px;
+  background-color: rgba(102, 197, 130, 0.8); /* Slightly transparent green */
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  margin-top: 10px; /* Add some top margin to the button */
+}
+
+.register-form button:hover {
+  background-color: rgba(85, 163, 110, 0.9);
+  transform: translateY(-2px);
+}
+
+.auth-switch-text {
+  text-align: center;
+  margin-top: 25px; /* Increased margin */
+  font-size: 0.9em;
+  color: #ddd;
+}
+
+.auth-link {
+  color: #a7f3d0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .register-form {
+    margin: 30px 20px;
+    padding: 30px;
+    border-radius: 12px;
+  }
+
+  .register-form h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .register-form label {
+    font-size: 0.95em;
+    top: 10px;
+    left: 10px;
+  }
+
+  .register-form input {
+    font-size: 1em;
+    padding: 14px 10px 6px;
+    border-radius: 6px;
+  }
+
+  .register-form input:focus + label,
+  .register-form input:not(:placeholder-shown) + label {
+    top: 2px;
+    font-size: 0.75em;
+  }
+
+  .register-form button {
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 8px;
+  }
+
+  .auth-switch-text {
+    font-size: 0.85em;
+    margin-top: 20px;
+  }
+}
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  .auth-switch-text {
+    font-size: 0.85em;
+  }
+}

@@ -1,0 +1,108 @@
+.home {
+  padding: 20px;
+  background: #f4f7f9;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home-banner {
+  background: linear-gradient(135deg, #004e92, #000428);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.home-banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.home-banner p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Site card container with 3 cards in a row */
+.site-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+/* Individual site card */
+.site-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.site-card:hover {
+  transform: translateY(-5px);
+}
+
+.site-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.site-card .location {
+  display: flex;
+  align-items: center;
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.site-card .location svg {
+  margin-right: 5px;
+  color: #007bff;
+}
+
+/* Status Button */
+.status-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+/* Weather Section */
+.weather-section {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.weather-section img.weather-icon {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.weather-section p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.temperature-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 450;
+}
+
+.temp-icon {
+  width: 20px;
+  height: 20px;
+}

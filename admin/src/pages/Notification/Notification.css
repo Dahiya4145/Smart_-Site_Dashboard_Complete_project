@@ -1,0 +1,70 @@
+.notification-page {
+  padding: 20px;
+   background: linear-gradient(135deg, #dbeafe, #fef3c7);
+  color: #111827;
+}
+
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btn {
+  margin-right: 10px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-delete {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn-mark-all {
+  background-color: #2196f3;
+  color: white;
+}
+.no-notifications-container {
+  text-align: center;
+  padding: 60px 20px;
+  color: #555;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  max-width: 400px;
+  margin: 40px auto;
+  user-select: none;
+  transition: background 0.3s ease;
+}
+
+.no-notifications-container:hover {
+  background: #e8f0fe;
+  color: #3366ff;
+  cursor: default;
+}
+
+.no-notifications-icon {
+  margin-bottom: 20px;
+  stroke: #888;
+  transition: stroke 0.3s ease;
+}
+
+.no-notifications-container:hover .no-notifications-icon {
+  stroke: #3366ff;
+}
+
+.no-notifications-container h3 {
+  margin-bottom: 8px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.no-notifications-container p {
+  font-size: 1rem;
+  color: #777;
+  line-height: 1.4;
+}
