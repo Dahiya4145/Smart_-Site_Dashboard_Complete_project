@@ -159,11 +159,13 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 For any queries or support, please contact:
 **Nishant Dahiya**
+
+---
 📧 dahiya4145@gmail.com
 🔗 [LinkedIn](https://www.linkedin.com/in/nishant-dahiya-080bb4259/)
 
-```
+---
 
 ## Live links
 **Client Portal** (https://smartsitedashboard.netlify.app)
-*Admin portal* (https://smartsiteadminportal.netlify.app)
+**Admin portal** (https://smartsiteadminportal.netlify.app)
