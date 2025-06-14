@@ -128,7 +128,27 @@ cd smart-site-dashboard
 
 ## 🖼️ Screenshots
 
-*(Include some UI screenshots here if available)*
+
+[Admin Dashboard](https://github.com/user-attachments/assets/d145785d-96dc-4575-a79d-bf0eca658947)
+
+[Register page](https://github.com/user-attachments/assets/ab112ca6-c5fa-4cd5-bf69-1720c3a66000)
+
+[Login page](https://github.com/user-attachments/assets/b06fea58-ca05-4a89-b9f9-bb5b2e4c1811)
+
+[Home Page](https://github.com/user-attachments/assets/a8b00523-0b6f-4e31-b2dd-49bff72017c7)
+
+[About](https://github.com/user-attachments/assets/db31185f-2bb8-46f1-90db-c227df67c6c5)
+
+[Site Details Page](https://github.com/user-attachments/assets/8f815d6d-76f3-43db-bb93-642c845d247d)
+
+[Contact As](https://github.com/user-attachments/assets/01c73793-f801-4a31-83e0-928ca90dd073)
+
+[Footer](https://github.com/user-attachments/assets/aea0f43f-78f1-45ac-bd31-0cdeaf2d06c7)
+
+
+
+
+
 
 ---
 
